@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#080b0e" />
+<meta name="description" content="A live countdown and weekly training tracker for Project Get Back Gains.">
+<title>Project Get Back Gains — Countdown & Training Schedule</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="shell">
+  <header class="topline"><div class="brand">🥊 Project Get Back Gains</div><div class="datepill" id="todaydate">Loading date…</div></header>
+  <section class="hero" aria-labelledby="hero-title"><div class="herohead"><span class="kicker">The comeback starts now</span><span class="glyph" aria-hidden="true">🏋🏽</span></div><h1 id="hero-title">GET BACK<br>GAINS.</h1><p>Discipline. Recovery. Progress. Your training countdown to 20 January 2027.</p><div class="countgrid" role="timer" aria-label="Time until January 20 2027"><div class="count"><div class="num" id="days">--</div><div class="unit">Days</div></div><div class="count"><div class="num" id="hours">--</div><div class="unit">Hours</div></div><div class="count"><div class="num" id="minutes">--</div><div class="unit">Minutes</div></div><div class="count"><div class="num" id="seconds">--</div><div class="unit">Seconds</div></div></div><div class="target" id="targetnote">🎯 Target: Wednesday 20 January 2027 · 00:00 GMT</div></section>
+  <div class="controls"><div><h2 class="sectiontitle">Your weekly fight plan</h2><div class="sub">7-day training split · track each week independently</div></div><div class="switch" role="group" aria-label="Select training phase"><button id="pre" class="active" type="button" aria-pressed="true">🛡️ Wrist-safe phase</button><button id="post" type="button" aria-pressed="false">🥊 Full return · Jan 20+</button></div></div>
+  <div class="status"><div><strong id="phasehead">Phase 1–2 · Wrist-safe execution</strong><small id="weeklabel">Current training week</small></div><div class="progresswrap"><div class="track" aria-label="Weekly completion"><div class="fill" id="fill"></div></div><span class="percent" id="progress">0/7</span></div></div>
+  <div class="weekgrid" id="weekgrid"></div>
+  <div class="actions"><button type="button" class="action" id="calendar">📅 Add target date to calendar</button><button type="button" class="action secondary" id="reset">↺ Reset this week's checks</button></div>
+  <div class="notice"><strong>Return-to-training checkpoint:</strong> 20 January is a goal, not medical clearance. Increase resistance, bag work and sparring only when wrist symptoms and clinical guidance permit. Avoid painful loading, and modify any exercise that aggravates your wrist. Barbell lifts, push-ups, hanging work and impact drills can still stress the wrist even during the pre-return phase.</div>
+  <div class="footer">PROJECT GET BACK GAINS · A personal countdown and training tracker · Progress is stored only in this browser.</div>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>
